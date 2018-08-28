@@ -1,0 +1,16 @@
+{
+  "name": "WebApp",
+  "version": "1.0.0",
+  "description": "Simple Quick Web App",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server -c-1 -p 3006"
+  },
+  "keywords": ["web"],
+  "author": "himanshi",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.10.0"
+  }
+}
