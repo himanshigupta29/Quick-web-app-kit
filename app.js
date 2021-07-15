@@ -6,7 +6,12 @@ const app = express();
 const PORT = 3331;
 
 
+
 app.set('view engine', 'ejs');
+
+// app.use(express.static('public'))
+
+app.use('/assets', express.static('public'));
 
 app.get('/', (req, res) => {
 
