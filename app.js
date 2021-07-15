@@ -19,9 +19,9 @@ app.get('/', (req, res) => {
 
 });
 
-app.get('/contact', (req, res) => {
+app.get('/js-loading', (req, res) => {
 
-    res.render('contact');
+    res.render('jsloading');
 
 });
 
@@ -29,4 +29,11 @@ app.get('/contact', (req, res) => {
 // start server
 app.listen( PORT, () => {
     console.log(`App is running on http://localhost:${PORT} \n\nHit CTRL + C to stop the server`);
+})
+
+app.use(function(err,req,res,next) {
+
+
+    res.send('some error occurred');
+
 })
